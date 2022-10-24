@@ -1,0 +1,61 @@
+$background-body: #f0f1f7;
+$background-left: #dddddd;
+$button: #545871;
+$font-left-main: #707070;
+$font-purple: #7f1da5;
+$font-light-purple: #ad75c3;
+$font-grey-orange: #b8817d;
+$font-orangered: #e3756d;
+$nav-background: #f7eceb;
+
+@import "animate.css";
+@import "~loaders.css/src/animations/ball-spin-fade-loader.scss";
+
+@font-face {
+  font-family: "Henrietta Bold";
+  src: url("./assets/fonts/henriette/Henriette\ Bold.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Henrietta Regular";
+  src: url("./assets/fonts/henriette/Henriette\ Regular.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Fresh Honey";
+  src: url("./assets/fonts/fresh-honey/FreshHoney.otf") format("opentype");
+}
+
+input,
+textarea {
+  font-family: "Henrietta Bold";
+}
+
+.loader-active {
+  display: block;
+  position: absolute !important;
+  left: 100px;
+  right: 0;
+  margin: auto auto;
+  top: 0;
+  bottom: 0;
+  width: 50px;
+  height: 50px;
+  padding-left: 5rem;
+  animation: fadeIn 1s 1s;
+  animation-fill-mode: forwards;
+  color: $font-light-purple;
+}
+
+.page {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+.left {
+  background: $background-left;
+  height: 100vh;
+  // position: absolute;
+}
+

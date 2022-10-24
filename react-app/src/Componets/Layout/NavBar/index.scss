@@ -1,0 +1,116 @@
+@import "../../../App.scss";
+
+.nav-bar {
+  background: $nav-background;
+  width: 100%;
+  height: 80px;
+  // text-align: center;
+  justify-content: center;
+  align-items: center;
+  margin: auto auto;
+  justify-content: space-around;
+
+  .logo {
+    width: auto;
+    margin-left: 15rem;
+    margin-right: 15rem;
+    display: inline;
+    height: auto;
+    img {
+      width: 100px;
+      height: auto;
+      position: absolute;
+      top: 7px;
+
+      // align-items: center;
+      // margin-right: 10rem !important;
+      // margin-left: 10rem !important;
+    }
+  }
+
+  nav {
+    justify-content: center;
+    align-items: center;
+    margin: auto auto;
+    position: absolute;
+    top: 20px;
+    left: 20%;
+    width: auto;
+    margin-left: 10rem;
+
+    a {
+      font-size: 30px;
+      margin: 0 5rem;
+      padding: 0.75rem 0;
+      position: relative;
+      display: inline;
+      height: 51px;
+      text-decoration: none;
+      color: $button !important;
+      justify-content: center;
+      text-align: center;
+     
+      i {
+        transition: all 0.3s ease-out;
+      }
+
+      &:hover {
+        color: $font-purple !important;
+        // background-color: rgba($color: $font-light-purple, $alpha: 0.5);
+
+        svg {
+          opacity: 0;
+        }
+
+        &:after {
+          opacity: 1;
+        }
+      }
+
+      &:after {
+        content: "";
+        font-size: 20px;
+        font-family: "Henrietta Bold";
+        justify-content: center;
+        text-align: center;
+        position: absolute;
+        font-weight: 400;
+        top: 12px;
+        right: 0;
+        left: 0;
+        opacity: 0;
+        width: 100%;
+        display: inline;
+        transition: all 0.3s ease-out;
+      }
+    }
+
+    a.home-link {
+      &::after {
+        content: "HOME";
+        text-align: center;
+        left: -15px;
+      }
+    }
+
+    // a.habit-link {
+    //   &::after {
+    //     content: "HABITS";
+    //     left: -15px;
+    //   }
+    // }
+
+    a.calendar-link {
+      &::after {
+        content: "HABITS";
+        left: -35px;
+      }
+    }
+
+    a.active {
+      svg {
+        color: $font-purple;
+      }
+    }
+  }
+}

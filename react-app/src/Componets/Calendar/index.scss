@@ -1,0 +1,122 @@
+@import "../../App.scss";
+
+$accentColor: #00BCD4;
+$backgroundColor: #1D1F20;
+$primaryColor: #3F51B5;
+$primaryDarkColor: #303F9F;
+$primaryLightColor: #C5CAE9;
+$pickerSize: 500px;
+
+* { box-sizing: border-box; }
+
+
+.datePicker {
+   background-color: #fff;
+   border: 1px solid #0007;
+   border-radius: 20px;
+   box-shadow: 4px 4px 10px #0002, 
+      1px 1px 0 #fff1 inset,
+      1px 1px 0 #0001;
+   overflow: hidden;
+   padding-bottom: 24px;
+   width: 100%;
+   
+}
+
+.pickerHeader {
+   background-color: $primaryColor;
+   display: flex;
+   flex-direction: row;
+   padding: 8px 8px;
+   
+   button {
+      border: none;
+      border-radius: 4px;
+      background-color: $accentColor;
+      box-shadow: 1px 1px 0 #fff4 inset, 1px 1px 0 #0004;
+      color: #212121;
+      cursor: pointer;
+      font-size: 20px;
+      outline: none;
+      padding: 0 8px;
+      text-transform: uppercase;
+      transition: all 200ms ease-in-out;
+      
+      &:hover {
+         color: #fff;
+      }
+      
+      &:active {
+         box-shadow: none;
+         color: #fff;
+      }
+      
+      &:nth-of-type(1) {
+         border-top-left-radius: 10px;
+      }
+      
+      &:nth-of-type(2) {
+         border-top-right-radius: 10px;
+      }
+   }
+   
+   h1 {
+      color: #fffd;
+      flex: 1;
+      font-weight: 300;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+      text-shadow: 1px 1px 2px #0002;
+      font-family: "Fresh Honey";
+      font-size: 40px;
+   }
+   
+   small {
+      font-size: 1em;
+      font-weight: 300;
+      opacity: 0.7;
+   }
+}
+
+.dates {
+   color: #212121;
+   padding: 0 8px;
+   position: relative;
+   width: 100%;
+   
+   span {
+      border-radius: 4px;
+      cursor: pointer;
+      display: inline-block;
+      padding: 16px 8px;
+      transition: all 200ms ease-in-out;
+      width: calc(100%/7);
+      font-size: 25px;
+      &.active {
+         background-color: $primaryLightColor;
+         color: #fff;
+         font-weight: 600;
+      }
+      
+      &:not(.empty):hover {
+         background-color: $primaryLightColor;
+      }
+   }
+}
+
+.weekHeader {
+   background-color: $primaryDarkColor;
+   box-shadow: 0 1px 0 #0003 inset;
+   display: flex;
+   flex-direction: row;
+   padding: 0 8px;
+   
+   span {
+      color: #fff;
+      flex: calc(1/7);
+      font-size: 20px;
+      font-weight: 400;
+      padding: 8px 4px;
+   }
+}

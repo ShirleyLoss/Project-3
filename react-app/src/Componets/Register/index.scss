@@ -1,0 +1,185 @@
+@import "../../App.scss";
+
+.text-zone {
+  text-align: left;
+  padding-left: 5rem;
+  align-items: center;
+  // margin-top: auto;
+  // margin-bottom: auto;
+  height: 100vh;
+  background: $background-left;
+  img {
+    width: 50%;
+    margin-top: 3rem;
+    margin-left: -1rem;
+  }
+
+  h1 {
+    font-family: "Henrietta Bold";
+    font-weight: bolder;
+    // line-height: 2rem;
+    // margin-top: 2rem;
+    font-size: 30px;
+    // &:first-child {
+    //   // font-size: 25px;
+    // }
+    &:nth-child(2) {
+      color: $font-grey-orange;
+      // font-size: 30px;
+    }
+    &:nth-child(3) {
+      color: $font-left-main;
+      // font-size: 30px;
+    }
+    &:nth-child(4) {
+      color: $font-orangered;
+      // font-size: 30px;
+    }
+    &:nth-child(5) {
+      color: $font-light-purple;
+      // font-size: 30px;
+    }
+  }
+
+  a {
+    position: absolute;
+    bottom: 15rem;
+    font-size: 15px;
+    color: $font-left-main;
+    padding-top: 2rem;
+    font-family: "Henrietta Regular";
+  }
+}
+
+.register-form,
+.login-Form {
+  width: 50%;
+  // padding-top: 5rem;
+  justify-content: center;
+  align-items: center;
+  margin: auto auto;
+
+  h1 {
+    text-align: center;
+    font-size: 40px;
+    margin: 2rem 0;
+    font-weight: 600;
+    font-family: "Henrietta Bold";
+    animation: fadeInUp 1s 1s;
+    animation-fill-mode: forwards;
+    clear: both;
+  }
+
+  ul {
+    padding: 0;
+    margin: 0;
+    li {
+      padding: 0;
+      margin: 0%;
+      list-style: none;
+      margin-bottom: 2rem;
+      overflow: hidden;
+      display: block;
+      position: relative;
+      opacity: 0;
+      animation: fadeInUp 2s 2s;
+      animation-fill-mode: forwards;
+      clear: both;
+
+      label {
+        margin-left: 2%;
+        padding-top: 1rem;
+        font-size: 25px;
+        color: $font-grey-orange;
+        font-weight: bold;
+        padding-bottom: 1rem;
+        font-family: "Henrietta Bold";
+        &:last-child {
+          font-size: 15px;
+        }
+      }
+    }
+
+    li.half {
+      width: 49%;
+      margin-left: 2%;
+      //   margin-right: 0;
+      clear: none;
+      &:first-child {
+        margin-left: 0;
+        margin-right: 2%;
+      }
+      &:nth-child(even) {
+        margin-left: 0;
+        // margin-left: 0;
+      }
+    }
+
+    li.full {
+      text-align: center;
+      margin-top: 1rem;
+    }
+  }
+
+  input[type="text"],
+  input[type="email"],
+  input[type="password"] {
+    width: 100%;
+    border: 0;
+    background: rgba($color: $font-light-purple, $alpha: 0.3);
+    height: 50px;
+    font-size: 20px;
+    // color: #fff;
+    padding: 0 20px;
+    box-sizing: border-box;
+    border-radius: 45px;
+  }
+
+  .flat-button {
+    color: $font-light-purple;
+    font-size: 20px;
+    letter-spacing: 3px;
+    text-decoration: none;
+    padding: 8px 10px;
+    border: 1px solid $font-light-purple;
+    width: 49%;
+    border-radius: 45px;
+    background: 0 0;
+    text-transform: uppercase;
+    text-align: center;
+    &:hover {
+      color: white;
+      background: $font-light-purple;
+    }
+  }
+}
+
+.errormsg {
+  color: red;
+  // display: block;
+  // padding: 1rem;
+  padding-top: 5px;
+}
+
+.login-Form {
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  margin: auto auto;
+
+  h1 {
+    text-align: center;
+  }
+  label {
+    margin-top: 1rem;
+    margin-bottom: 1rem ;
+  }
+  // a {
+  //   margin-top: 1rem;
+  // }
+}
+.logo {
+  width: 25%;
+  justify-content: center;
+  margin: auto auto;
+}

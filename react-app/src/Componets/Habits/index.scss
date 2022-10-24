@@ -1,0 +1,34 @@
+@import '../../App.scss';
+
+input[type="checkbox"]{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin: auto auto;
+}
+
+.col-12 {
+    text-align: center;
+}
+
+h3 {
+    font-family: "Henrietta Bold";
+    color: $font-grey-orange;
+    font-weight: 700;
+    font-size: 50px;
+    margin-top: 2rem;
+}
+thead {
+    th{
+        &:nth-child(1){
+            color: $font-purple;
+        }
+         &:nth-child(2){
+            color: $font-left-main;
+        }
+         &:nth-child(3){
+            color: $font-orangered;
+        }
+
+    }
+}
