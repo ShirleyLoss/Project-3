@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import NavBar from "../Layout/NavBar/index";
-import Logo from "../../assets/images/2-removebg-preview.png";
+import Logo from "../../assets/images/remind-logo-register.png";
 import "./index.scss";
 import { Link } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -13,7 +13,7 @@ class Login extends Component {
         {/* <NavBar /> */}
 
         <Img />
-        <h1>Welcome to MIGHTY !</h1>
+        <h1>Welcome to mini todo reminder !</h1>
         <form>
           <div className="col-12">
             <label htmlFor="email">Email Address</label>
